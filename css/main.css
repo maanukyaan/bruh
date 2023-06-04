@@ -1,0 +1,60 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Parisienne", cursive;
+  background: #181818;
+}
+
+button {
+  border: 3px solid #fff;
+  color: #fff;
+  background: transparent;
+  margin-top: 30px;
+  padding: 10px 30px;
+  font-size: 26px;
+  transition: all .3s ease;
+}
+
+button:hover {
+    background: #fff;
+    color: #303030;
+}
+
+.img__container img {
+    width: 300px;
+}
+
+.img__container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.img__container.visible {
+    display: flex;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.gif__container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.gif__container.visible {
+  display: flex;
+  opacity: 1;
+  pointer-events: all;
+}
